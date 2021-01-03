@@ -123,7 +123,7 @@ const CartScreen = ({ match, location, history }) => {
               <Button
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
-                variant="outlined"
+                variant="contained"
               >
                 Proceed To Checkout
               </Button>
