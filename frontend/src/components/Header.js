@@ -10,8 +10,7 @@ import {
 } from "@material-ui/core"
 import MenuIcon from "@material-ui/icons/Menu"
 import { makeStyles } from "@material-ui/core/styles"
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart"
-import PersonIcon from "@material-ui/icons/Person"
+import UserLoggedIn from "../components/UserLoggedIn.js"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,18 +43,8 @@ const NavBar = () => {
             <Typography variant="h6" className={classes.title}>
               OFU
             </Typography>
-            <Button>
-              <Link style={{ color: "white" }} href="/cart">
-                <ShoppingCartIcon style={{ marginRight: "0.25rem" }} />
-                Cart
-              </Link>
-            </Button>
-            <Button color="inherit" style={{ marginLeft: "0.5rem" }}>
-              <Link style={{ color: "white" }} href="/login">
-                <PersonIcon style={{ marginRight: "0.25rem" }} />
-                Login
-              </Link>
-            </Button>
+
+            <UserLoggedIn />
           </Toolbar>
         </AppBar>
       </Box>

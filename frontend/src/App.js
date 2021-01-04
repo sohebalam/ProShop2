@@ -6,7 +6,10 @@ import Footer from "./components/Footer"
 import HomeScreen from "./screens/Home"
 import ProductScreen from "./screens/ProductScreen"
 import CartScreen from "./screens/CartScreen"
+import LoginForm from "./screens/LoginScreen"
+import RegisterForm from "./screens/RegisterScreen"
 import { Box, CssBaseline } from "@material-ui/core"
+import ProfileScreen from "./screens/ProfileScreen"
 
 const App = () => {
   return (
@@ -18,6 +21,9 @@ const App = () => {
           <Route path="/" component={HomeScreen} exact />
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
+          <Route path="/login" component={LoginForm} />
+          <Route path="/register" component={RegisterForm} />
+          <Route path="/profile" component={ProfileScreen} />
         </Container>
       </Box>
       <Footer />
