@@ -66,7 +66,7 @@ const CartScreen = ({ match, location, history }) => {
                       <CardMedia image={item.image} className={classes.media} />
                     </Grid>
                     <Grid item md={3} style={{ padding: "0.75rem" }}>
-                      <Link to={`/product/${item.product}`}>{item.name}</Link>
+                      {/* <Link to={`/product/${item.product}`}>{item.name}</Link> */}
                     </Grid>
                     <Grid item md={2} style={{ padding: "0.75rem" }}>
                       ${item.price}

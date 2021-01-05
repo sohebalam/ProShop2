@@ -53,7 +53,7 @@ export default function Register({ location, history }) {
     if (userInfo) {
       history.push(redirect)
     }
-  }, [userInfo, redirect])
+  }, [userInfo, redirect, history])
 
   const submitHandler = (e) => {
     e.preventDefault()
